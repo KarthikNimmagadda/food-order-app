@@ -30,7 +30,7 @@ const MENU_ITEMS = [
   ];
 
 const AvailableMeals = () => {
-    const itemsList = MENU_ITEMS.map(item => <MealItem key={item.id} meal={item}></MealItem>);
+    const itemsList = MENU_ITEMS.map(item => <MealItem key={item.id} id={item.id} meal={item}></MealItem>);
 
     return <section className={classes.meals}>
         <Card>

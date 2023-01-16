@@ -5,8 +5,8 @@ import HeaderCartButton from "./HeaderCartButton";
 const Header = (props) => {
     return <>
         <header className={classes.header}>
-            <h1>Karthik's bites</h1>
-            <HeaderCartButton/>
+            <h3>Spice</h3>
+            <HeaderCartButton onClick={props.onShowCart}/>
         </header>
         <div className={classes['main-image']}>
             <img src={foodImage} alt="Food"/>
